@@ -4,6 +4,8 @@
   "description": "CI Github Actions",
   "main": "index.js",
   "scripts": {
+    "develop": "webpack --mode=development",
+    "build": "webpack --mode=production",
     "lint": "eslint . --fix",
     "test": "jest --watchAll",
     "lint:ci": "eslint .",
@@ -13,9 +15,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.8.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   }
 }
